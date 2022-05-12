@@ -1,0 +1,10 @@
+.card-style {
+  box-shadow: 0 0 2px #bab0b0;
+  transition: 0.2s;
+  transform: scale(0.97);
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.99);
+    box-shadow: 0 0 5px #bab0b0;
+  }
+}

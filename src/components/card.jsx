@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import styles from "./card.module.scss";
 const MyCard = ({ children, header, title, color }) => {
   return (
     <Card
@@ -6,6 +7,7 @@ const MyCard = ({ children, header, title, color }) => {
       style={{ width: "18rem" }}
       bg={color.toLowerCase()}
       text={color.toLowerCase() === "light" ? "dark" : "white"}
+      className={styles["card-style"]}
     >
       <Card.Header>{header}</Card.Header>
       <Card.Body>
